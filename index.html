@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="imgs/logo.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/Style.css" />
+  </head>
+  <body>
+    <!--  Side Nav  -->
+    <div id="sidenav" class="d-flex justify-content-end">
+      <div class="sidenav row">
+        <ul class="list-unstyled text-white">
+          <button href="#" class="closeBtn bg-transparent text-white">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <li id="search" href="#">Search</li>
+          <li id="categories" href="#">Categories</li>
+          <li id="area" href="#">Area</li>
+          <li id="ingredients" href="#">Ingredients</li>
+          <li id="contact" href="#">Contact Us</li>
+        </ul>
+      </div>
+      <div class="sidetoggle">
+        <span class="logo">
+          <img class="img-fluid w-100" src="imgs/logo.png" alt="logo" />
+        </span>
+        <span class="open"><i class="fa-solid fa-bars m-2"></i></span>
+      </div>
+    </div>
+
+    <!-- Search  -->
+    <div class="container d-none" id="searchInput">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-floating ">
+            <input
+              type="text"
+              class="sByName form-control bg-transparent text-white fw-bolder"
+              
+              placeholder=""
+            />
+            <label class="text-white" for="floatingInput">Search By Name</label>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-floating m-3">
+            <input
+              type="text"
+              class="form-control bg-transparent sByfirst text-white fw-bolder"
+              id="floatingInput"
+              placeholder=""
+            />
+            <label class="text-white bg-transparent" for="floatingInput"
+              >Search By First Letter</label
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category -->
+    <div class="container categoryShow d-none my-3">
+      <div class="row g-4" id="categoryData"></div>
+    </div>
+
+    <!-- Ingrediant -->
+    <div class="container IngrediantShow d-none my-3">
+      <div class="row g-4" id="IngrediantData"></div>
+    </div>
+
+    <!-- Area -->
+    <div class="container areaShow d-none my-3">
+      <div class="row flex-row g-4" id="areaData"></div>
+    </div>
+
+    <!-- details -->
+
+    <div class="container text-white min-vh-100 m-auto details d-none " >
+      <div class="row m-auto justify-content-center align-items-center" id="details">
+        
+      </div>
+    </div>
+
+
+    <!-- contact -->
+     
+
+      <div class="container d-flex flex-column align-content-center d-none " id="contactShow">
+        <div class="row align-content-center min-vh-100 ">
+          <div class="col-md-6  text-center text-white m-auto ">
+            <div class="my-3 w-100">
+              <input type="text" class="form-control" id="nameInput" placeholder="Enter Your Name">
+              <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid Name
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6  text-center text-white m-auto ">
+            <div class=" w-100">
+              <input type="text" class="form-control" id="mailInput" placeholder="Enter Your E-Mail">
+              <div id="mailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid E-Mail
+              </div>
+              
+            </div>    
+          </div>
+  
+          <div class="col-md-6  text-center text-white m-auto ">
+            <div class=" w-100">
+              <input type="text" class="form-control" id="phoneInput" placeholder="Enter Your Phone">
+              <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid Phone
+              </div>
+              
+            </div>    
+          </div>
+  
+          <div class="col-md-6  text-center text-white m-auto ">
+            <div class=" w-100">
+              <input type="text" class="form-control" id="ageInput" placeholder="Enter Your Age">
+              <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid Age
+              </div>
+              
+            </div>    
+          </div>
+          
+  
+          <div class="col-md-6  text-center text-white m-auto ">
+            <div class=" w-100">
+              <input type="password" class="form-control" id="passInput" placeholder="Enter Your Password">
+              <div id="passAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid Password
+              </div>
+              
+            </div>    
+          </div>
+  
+          <div class="col-md-6  text-center text-white m-auto ">
+            <div class=" my-3 w-100">
+              <input type="password" class="form-control" id="repassInput" placeholder="RE Enter Your Password">
+              <div id="repassAlert" class="alert alert-danger w-100 mt-2 d-none">
+                RE Enter valid Password
+              </div>
+              
+            </div>    
+          </div>
+          <button id="submitBtn" type="button" class="btn btn-outline-danger col-md-3 disabled m-auto">Submt</button>
+
+
+
+
+       </div>
+      </div>
+     
+   
+
+
+    <!-- Show -->
+    <div class="container  home my-3">
+      <div class="row g-4" id="rowData"></div>
+    </div>
+
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/Main.js"></script>
+  </body>
+</html>
